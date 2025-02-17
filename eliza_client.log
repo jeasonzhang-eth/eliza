@@ -1,0 +1,25 @@
+nohup: ignoring input
+
+> eliza@ start:client /root/eliza
+> pnpm --dir client dev "--host"
+
+
+> client@ dev /root/eliza/client
+> pnpm run extract-version && vite "--host"
+
+
+> client@ extract-version /root/eliza/client
+> bash ./version.sh
+
+info.json created with version: 0.25.6-alpha.1
+
+  VITE v6.1.0  ready in 1666 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://152.42.173.170:5173/
+  ➜  Network: http://10.15.0.5:5173/
+  ➜  Network: http://10.130.0.2:5173/
+3:08:48 AM [vite] (client) hmr update /src/components/app-sidebar.tsx, /src/index.css, /src/routes/overview.tsx, /src/routes/home.tsx, /src/components/connection-status.tsx, /src/components/chat.tsx, /src/components/ui/chat/chat-tts-button.tsx, /src/components/audio-recorder.tsx
+5:50:22 AM [vite] (client) hmr update /src/components/app-sidebar.tsx, /src/index.css, /src/routes/overview.tsx, /src/routes/home.tsx, /src/components/connection-status.tsx, /src/components/chat.tsx, /src/components/ui/chat/chat-tts-button.tsx, /src/components/audio-recorder.tsx
+5:56:21 AM [vite] ../.env changed, restarting server...
+5:56:22 AM [vite] server restarted.
