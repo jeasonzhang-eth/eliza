@@ -13,13 +13,33 @@ nohup: ignoring input
 
 info.json created with version: 0.25.6-alpha.1
 
-  VITE v6.1.0  ready in 1666 ms
+  VITE v6.1.0  ready in 656 ms
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://152.42.173.170:5173/
   ➜  Network: http://10.15.0.5:5173/
   ➜  Network: http://10.130.0.2:5173/
-3:08:48 AM [vite] (client) hmr update /src/components/app-sidebar.tsx, /src/index.css, /src/routes/overview.tsx, /src/routes/home.tsx, /src/components/connection-status.tsx, /src/components/chat.tsx, /src/components/ui/chat/chat-tts-button.tsx, /src/components/audio-recorder.tsx
-5:50:22 AM [vite] (client) hmr update /src/components/app-sidebar.tsx, /src/index.css, /src/routes/overview.tsx, /src/routes/home.tsx, /src/components/connection-status.tsx, /src/components/chat.tsx, /src/components/ui/chat/chat-tts-button.tsx, /src/components/audio-recorder.tsx
-5:56:21 AM [vite] ../.env changed, restarting server...
-5:56:22 AM [vite] server restarted.
+9:40:30 AM [vite] ../.env changed, restarting server...
+9:40:31 AM [vite] server restarted.
+4:24:59 AM [vite] ../.env changed, restarting server...
+4:25:00 AM [vite] server restarted.
+5:14:48 AM [vite] (client) hmr update /src/hooks/use-version.tsx, /src/index.css, /src/components/app-sidebar.tsx
+5:14:49 AM [vite] (client) hmr invalidate /src/hooks/use-version.tsx Could not Fast Refresh ("default" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react-swc#consistent-components-exports
+5:14:49 AM [vite] (client) hmr update /src/index.css, /src/App.tsx
+8:27:33 PM [vite] (client) hmr update /src/hooks/use-version.tsx, /src/index.css, /src/components/app-sidebar.tsx
+8:34:51 PM [vite] (client) hmr invalidate /src/hooks/use-version.tsx Could not Fast Refresh ("default" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react-swc#consistent-components-exports
+8:34:51 PM [vite] (client) hmr update /src/index.css, /src/App.tsx
+8:51:26 PM [vite] ../.env changed, restarting server...
+8:51:26 PM [vite] (client) Re-optimizing dependencies because lockfile has changed
+8:51:27 PM [vite] server restarted.
+9:35:27 PM [vite] (client) hmr update /src/components/app-sidebar.tsx, /src/index.css, /src/hooks/use-version.tsx
+9:40:00 PM [vite] (client) hmr invalidate /src/hooks/use-version.tsx Could not Fast Refresh ("default" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react-swc#consistent-components-exports
+9:40:00 PM [vite] (client) hmr update /src/index.css, /src/App.tsx
+6:48:58 AM [vite] ../.env changed, restarting server...
+6:48:59 AM [vite] server restarted.
+7:17:24 AM [vite] ../.env changed, restarting server...
+7:17:26 AM [vite] server restarted.
+7:25:16 AM [vite] ../.env changed, restarting server...
+7:25:17 AM [vite] server restarted.
+7:58:38 AM [vite] ../.env changed, restarting server...
+7:58:39 AM [vite] server restarted.

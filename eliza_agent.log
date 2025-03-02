@@ -1,18 +1,18 @@
 nohup: ignoring input
 
 > eliza@ start /root/eliza
-> pnpm --filter "@elizaos/agent" start --isRoot "--characters=./characters/lofi-girl.character.json"
+> pnpm --filter "@elizaos/agent" start --isRoot "--character=characters/PrometheusAI.character.json"
 
 
 > @elizaos/agent@0.25.6-alpha.1 start /root/eliza/agent
-> node --loader ts-node/esm src/index.ts "--isRoot" "--characters=./characters/lofi-girl.character.json"
+> node --loader ts-node/esm src/index.ts "--isRoot" "--character=characters/PrometheusAI.character.json"
 
-(node:18547) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:1560785) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:18547) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:1560785) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[2025-02-17 05:58:21] [32mINFO[39m: [36mLoading embedding settings:[39m
+[2025-02-23 17:16:22] [32mINFO[39m: [36mLoading embedding settings:[39m
     USE_OPENAI_EMBEDDING: ""
     USE_OLLAMA_EMBEDDING: ""
     OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
@@ -24,7 +24,7 @@ nohup: ignoring input
 │  Version: 0.0.1                        │
 └════════════════════════════════════════┘
 ⚠️ Missing CDP API credentials - AgentKit actions will not be available
-[2025-02-17 05:58:27] [32mINFO[39m: [36mLoading embedding settings:[39m
+[2025-02-23 17:16:30] [32mINFO[39m: [36mLoading embedding settings:[39m
     USE_OPENAI_EMBEDDING: ""
     USE_OLLAMA_EMBEDDING: ""
     OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
@@ -42,13 +42,13 @@ bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
 │  Version: 0.0.1                     │
 └═════════════════════════════════════┘
 using deprecated parameters for the initialization function; pass a single object instead
-Mon, 17 Feb 2025 05:58:40 GMT lit-js-sdk:constants:errors deprecated LitErrorKind is deprecated and will be removed in a future version. Use LIT_ERROR_KIND instead. at node:internal/modules/cjs/loader:1546:14
+Sun, 23 Feb 2025 17:16:51 GMT lit-js-sdk:constants:errors deprecated LitErrorKind is deprecated and will be removed in a future version. Use LIT_ERROR_KIND instead. at node:internal/modules/cjs/loader:1546:14
 ipfs.json not found. Using default deployed CIDs.
 ipfs.json not found. Using default CIDs. You should run `npx nx deploy:lit-action` to update the ipfs.json files.
 ipfs.json not found. Using default CIDs. You should run `npx nx deploy:lit-action` to update the ipfs.json files.
-FqbkdqDUDNDapoc434ky82gLTzsiCKNLzcKczrzdfbko
-5Sym9FguGpba1iLtGTCDXLeBFp5CVU4Ux7PQMHrHr3EyDDNosQLSJ1xNeVnQok262zHw8SDyqMC1nQQm3V7FdgM1
-[2025-02-17 05:58:56] [32mINFO[39m: [36mLoading embedding settings:[39m
+GbNzx9WKsJWniUZziUgXkTCnrRBk6vHbkjY24vdJA4mk
+66drrsJSvHpVsoM13pchV4fZPYSe9ne6m932s6U8bm2zsaTixCZvykB8JBsimyKXBPMMJN1CKHDUtoX4cXGbyoaN
+[2025-02-23 17:17:11] [32mINFO[39m: [36mLoading embedding settings:[39m
     USE_OPENAI_EMBEDDING: ""
     USE_OLLAMA_EMBEDDING: ""
     OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
@@ -107,10 +107,9 @@ Actions   :
 [36m│[39m Status  : Loaded & Ready    [36m│[39m
 [36m└─────────────────────────────┘[39m
 
-SEI IS BEING INITIALIZED
 - Initializing ANKR Plugin...
-(node:18547) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
-(node:18547) ExperimentalWarning: CommonJS module /root/eliza/node_modules/is-async-function/index.js is loading ES Module /root/eliza/node_modules/async-function/require.mjs using require().
+(node:1560785) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(node:1560785) ExperimentalWarning: CommonJS module /root/eliza/node_modules/is-async-function/index.js is loading ES Module /root/eliza/node_modules/async-function/require.mjs using require().
 Support for loading ES Module in require() is an experimental feature and might change at any time
 still waiting on run dependencies:
 dependency: wasm-instantiate
@@ -146,21 +145,22 @@ dependency: wasm-instantiate
 [36m│[39m Status  : Loaded & Ready [36m│[39m
 [36m└──────────────────────────┘[39m
 
-[2025-02-17 05:58:21] [32mINFO[39m: [36mLoading character settings:[39m
+[2025-02-23 17:16:22] [32mINFO[39m: [36mLoading character settings:[39m
     ARGV: [
       "/root/.nvm/versions/node/v23.3.0/bin/node",
       "/root/eliza/agent/src/index.ts",
       "--isRoot",
-      "--characters=./characters/lofi-girl.character.json"
+      "--character=characters/PrometheusAI.character.json"
     ]
+    CHARACTER_ARG: "--character=characters/PrometheusAI.character.json"
     CWD: "/root/eliza/agent"
-[2025-02-17 05:58:21] [32mINFO[39m: [36mParsed settings:[39m
+[2025-02-23 17:16:22] [32mINFO[39m: [36mParsed settings:[39m
     USE_OPENAI_EMBEDDING: ""
     USE_OPENAI_EMBEDDING_TYPE: "string"
     USE_OLLAMA_EMBEDDING: ""
     USE_OLLAMA_EMBEDDING_TYPE: "string"
     OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
-[2025-02-17 05:58:33] [32mINFO[39m: [36mEnvironment sources[39m
+[2025-02-23 17:16:38] [32mINFO[39m: [36mEnvironment sources[39m
     shellVars: [
       "AKASH_CHAT_API_KEY",
       "AKASH_ENV",
@@ -189,110 +189,116 @@ dependency: wasm-instantiate
       "AKASH_MANIFEST_PATH",
       "AKASH_MANIFEST_VALIDATION_LEVEL"
     ]
-[2025-02-17 05:58:27] [32mINFO[39m: [36mLoading character settings:[39m
+[2025-02-23 17:16:30] [32mINFO[39m: [36mLoading character settings:[39m
     ARGV: [
       "/root/.nvm/versions/node/v23.3.0/bin/node",
       "/root/eliza/agent/src/index.ts",
       "--isRoot",
-      "--characters=./characters/lofi-girl.character.json"
+      "--character=characters/PrometheusAI.character.json"
     ]
+    CHARACTER_ARG: "--character=characters/PrometheusAI.character.json"
     CWD: "/root/eliza/agent"
-[2025-02-17 05:58:27] [32mINFO[39m: [36mParsed settings:[39m
+[2025-02-23 17:16:30] [32mINFO[39m: [36mParsed settings:[39m
     USE_OPENAI_EMBEDDING: ""
     USE_OPENAI_EMBEDDING_TYPE: "string"
     USE_OLLAMA_EMBEDDING: ""
     USE_OLLAMA_EMBEDDING_TYPE: "string"
     OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
-[2025-02-17 05:58:56] [32mINFO[39m: [36mLoading character settings:[39m
+[2025-02-23 17:17:11] [32mINFO[39m: [36mLoading character settings:[39m
     ARGV: [
       "/root/.nvm/versions/node/v23.3.0/bin/node",
       "/root/eliza/agent/src/index.ts",
       "--isRoot",
-      "--characters=./characters/lofi-girl.character.json"
+      "--character=characters/PrometheusAI.character.json"
     ]
+    CHARACTER_ARG: "--character=characters/PrometheusAI.character.json"
     CWD: "/root/eliza/agent"
-[2025-02-17 05:58:56] [32mINFO[39m: [36mParsed settings:[39m
+[2025-02-23 17:17:11] [32mINFO[39m: [36mParsed settings:[39m
     USE_OPENAI_EMBEDDING: ""
     USE_OPENAI_EMBEDDING_TYPE: "string"
     USE_OLLAMA_EMBEDDING: ""
     USE_OLLAMA_EMBEDDING_TYPE: "string"
     OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
-(node:18547) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:1560785) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:18547) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:1560785) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:18547) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:1560785) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:18547) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:1560785) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:18547) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:1560785) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:18547) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:1560785) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:18547) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+(node:1560785) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
 --import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:18547) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:1560785) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[2025-02-17 05:59:00] [32mINFO[39m: [36mTrying paths:[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mTrying paths:[39m
     0: {
-      "path": "./characters/lofi-girl.character.json",
+      "path": "characters/PrometheusAI.character.json",
       "exists": false
     }
     1: {
-      "path": "/root/eliza/agent/characters/lofi-girl.character.json",
+      "path": "/root/eliza/agent/characters/PrometheusAI.character.json",
       "exists": false
     }
     2: {
-      "path": "/root/eliza/agent/agent/characters/lofi-girl.character.json",
+      "path": "/root/eliza/agent/agent/characters/PrometheusAI.character.json",
       "exists": false
     }
     3: {
-      "path": "/root/eliza/agent/src/characters/lofi-girl.character.json",
+      "path": "/root/eliza/agent/src/characters/PrometheusAI.character.json",
       "exists": false
     }
     4: {
-      "path": "/root/eliza/agent/src/characters/lofi-girl.character.json",
+      "path": "/root/eliza/agent/src/characters/PrometheusAI.character.json",
       "exists": false
     }
     5: {
-      "path": "/root/eliza/agent/characters/lofi-girl.character.json",
+      "path": "/root/eliza/agent/characters/PrometheusAI.character.json",
       "exists": false
     }
     6: {
-      "path": "/root/eliza/characters/lofi-girl.character.json",
+      "path": "/root/eliza/characters/PrometheusAI.character.json",
       "exists": true
     }
-[2025-02-17 05:59:00] [32mINFO[39m: [36mSuccessfully loaded character from: /root/eliza/characters/lofi-girl.character.json[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mInitializing SQLite database at /root/eliza/agent/data/db.sqlite...[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mUsing Database Cache...[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mcrypto_lofi_girl(65b34c0f-728f-00de-82d5-d32ca9902095) - Initializing AgentRuntime with options:[39m
-    character: "crypto_lofi_girl"
+[2025-02-23 17:17:14] [32mINFO[39m: [36mPlugins are: [39m
+    0: "@elizaos/plugin-evm"
+[2025-02-23 17:17:14] [32mINFO[39m: [36mSuccessfully loaded character from: /root/eliza/characters/PrometheusAI.character.json[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mNormalized plugin: evm[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mInitializing SQLite database at /root/eliza/agent/data/db.sqlite...[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mUsing Database Cache...[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mPrometheusAI(6a2c387c-7124-0f92-ad7f-23d9203dc5b5) - Initializing AgentRuntime with options:[39m
+    character: "PrometheusAI"
     modelProvider: "openai"
     characterModelProvider: "openai"
-[2025-02-17 05:59:00] [32mINFO[39m: [36mcrypto_lofi_girl(65b34c0f-728f-00de-82d5-d32ca9902095) - Setting Model Provider:[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mPrometheusAI(6a2c387c-7124-0f92-ad7f-23d9203dc5b5) - Setting Model Provider:[39m
     characterModelProvider: "openai"
     optsModelProvider: "openai"
     finalSelection: "openai"
-[2025-02-17 05:59:00] [32mINFO[39m: [36mcrypto_lofi_girl(65b34c0f-728f-00de-82d5-d32ca9902095) - Selected model provider: openai[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mcrypto_lofi_girl(65b34c0f-728f-00de-82d5-d32ca9902095) - Selected image model provider: openai[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mcrypto_lofi_girl(65b34c0f-728f-00de-82d5-d32ca9902095) - Selected image vision model provider: openai[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mInitializing LlamaService...[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36m[RAG Check] RAG Knowledge enabled: false[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36m[RAG Check] Knowledge items:[39m
-    0: "了解市场基础知识"
-    1: "掌握主流币种特点"
-    2: "熟悉常见投资陷阱"
-    3: "了解新手常犯错误"
-    4: "掌握风险控制方法"
-    5: "了解市场情绪变化"
-    6: "熟悉热点项目分析"
-    7: "掌握基本面分析"
-    8: "了解投资心理学"
-    9: "熟悉各类骗局特征"
-[2025-02-17 05:59:00] [32mINFO[39m: [36m[RAG Cleanup] Starting cleanup of deleted knowledge files[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36m[RAG Cleanup] Cleanup complete[39m
-[2025-02-17 05:59:00] [32mINFO[39m: [36mRun `pnpm start:client` to start the client and visit the outputted URL (http://localhost:5173) to chat with your agents. When running multiple agents, use client with different port `SERVER_PORT=3001 pnpm start:client`[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mPrometheusAI(6a2c387c-7124-0f92-ad7f-23d9203dc5b5) - Selected model provider: openai[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mPrometheusAI(6a2c387c-7124-0f92-ad7f-23d9203dc5b5) - Selected image model provider: openai[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mPrometheusAI(6a2c387c-7124-0f92-ad7f-23d9203dc5b5) - Selected image vision model provider: openai[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mInitializing LlamaService...[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36m[RAG Check] RAG Knowledge enabled: false[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36m[RAG Check] Knowledge items:[39m
+    0: "Yield farming strategies"
+    1: "DEX liquidity provision"
+    2: "Cross-chain bridges"
+    3: "MEV protection"
+    4: "Smart contract risk assessment"
+    5: "Gas optimization"
+    6: "Impermanent loss calculations"
+    7: "Tokenomics analysis"
+[2025-02-23 17:17:14] [32mINFO[39m: [36m[RAG Cleanup] Starting cleanup of deleted knowledge files[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36m[RAG Cleanup] Cleanup complete[39m
+[2025-02-23 17:17:14] [32mINFO[39m: [36mRun `pnpm start:client` to start the client and visit the outputted URL (http://localhost:5173) to chat with your agents. When running multiple agents, use client with different port `SERVER_PORT=3001 pnpm start:client`[39m
+/root/eliza/agent:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @elizaos/agent@0.25.6-alpha.1 start: `node --loader ts-node/esm src/index.ts "--isRoot" "--character=characters/PrometheusAI.character.json"`
+Command failed with signal "SIGHUP"
